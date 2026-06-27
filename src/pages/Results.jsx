@@ -38,14 +38,13 @@ function Results() {
         </h2>
 
         <ul className="space-y-3">
+          
+{(result.redFlags || []).map((flag, index) => (
+  <li key={index}>
+    ⚠ {flag}
+  </li>
+))}
 
-          {result.redFlags.map(
-            (flag, index) => (
-              <li key={index}>
-                ⚠ {flag}
-              </li>
-            )
-          )}
 
         </ul>
 
