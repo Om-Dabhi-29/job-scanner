@@ -24,7 +24,7 @@ function ScanJob() {
   const handleScan = async () => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/scan",
+        "https://YOUR-RENDER-URL.onrender.com/scan",
         {
           method: "POST",
           headers: {
